@@ -22,6 +22,12 @@
 -(id) initWithCGPoint:(CGPoint)point offset:(CGPoint)offset;
 @end
 
+CGPoint _cloudParallaxRatio;
+CGPoint _bushParallaxRatio;
+
+CCNode *_parallaxContainer;
+CCParallaxNode *_parallaxBackground;
+
 @implementation MainScene {
     CCNode *_ground1;
     CCNode *_ground2;
@@ -46,12 +52,6 @@
     CCLabelTTF *_nameLabel;
     
     int points;
-    
-    CGPoint _cloudParallaxRatio;
-    CGPoint _bushParallaxRatio;
-    
-    CCNode *_parallaxContainer;
-    CCParallaxNode *_parallaxBackground;
 }
 
 
